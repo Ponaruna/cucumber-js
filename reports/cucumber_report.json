@@ -1,0 +1,92 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "books-by-author-name;correct-non-zero-number-of-books-found-by-author",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Correct non-zero number of books found by author",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "title",
+                      "author"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "The Devil in the White City",
+                      "Erick Larson"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "The Lion, the Witch and the Wardrope",
+                      "C.S.Lewis"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "In the Garden of Beast",
+                      "Erick Larson"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "I have the following books in the store",
+            "match": {
+              "location": "steps_definitions\\booksByauthor.steps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1521199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I search for the books by author \"Erick Larson\"",
+            "match": {
+              "location": "steps_definitions\\booksByauthor.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 476499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I find 2 books",
+            "match": {
+              "location": "steps_definitions\\booksByauthor.steps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1648299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "books-by-author-name",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Books by author name",
+    "tags": [],
+    "uri": "features\\booksByAuthor.feature"
+  }
+]

@@ -1,0 +1,7 @@
+{
+    "default":{
+        "format":["json:./reports/cucumber_report.json","html:./reports/cucumber_report.html"],
+        "require":["steps_definitions/**/*.steps.ts"],
+        "requireModule":["ts-node/register"]
+    }
+}
