@@ -4,10 +4,10 @@
     "elements": [
       {
         "description": "",
-        "id": "books-by-author-name;correct-non-zero-number-of-books-found-by-author",
-        "keyword": "Scenario",
-        "line": 2,
-        "name": "Correct non-zero number of books found by author",
+        "id": "books-by-author-name;scenario-outline-name:-correct-non-zero-number-of-books-found-by-author",
+        "keyword": "Scenario Outline",
+        "line": 13,
+        "name": "Scenario Outline name: Correct non-zero number of books found by author",
         "steps": [
           {
             "arguments": [
@@ -48,7 +48,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1521199
+              "duration": 1600599
             }
           },
           {
@@ -57,11 +57,11 @@
             "line": 8,
             "name": "I search for the books by author \"Erick Larson\"",
             "match": {
-              "location": "steps_definitions\\booksByauthor.steps.ts:20"
+              "location": "steps_definitions\\booksByauthor.steps.ts:18"
             },
             "result": {
               "status": "passed",
-              "duration": 476499
+              "duration": 377700
             }
           },
           {
@@ -70,11 +70,90 @@
             "line": 9,
             "name": "I find 2 books",
             "match": {
-              "location": "steps_definitions\\booksByauthor.steps.ts:26"
+              "location": "steps_definitions\\booksByauthor.steps.ts:21"
             },
             "result": {
               "status": "passed",
-              "duration": 1648299
+              "duration": 1618399
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "books-by-author-name;scenario-outline-name:-correct-non-zero-number-of-books-found-by-author",
+        "keyword": "Scenario Outline",
+        "line": 14,
+        "name": "Scenario Outline name: Correct non-zero number of books found by author",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "title",
+                      "author"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "The Devil in the White City",
+                      "Erick Larson"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "The Lion, the Witch and the Wardrope",
+                      "C.S.Lewis"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "In the Garden of Beast",
+                      "Erick Larson"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "I have the following books in the store",
+            "match": {
+              "location": "steps_definitions\\booksByauthor.steps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 110299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I search for the books by author \"C.S.Lewis\"",
+            "match": {
+              "location": "steps_definitions\\booksByauthor.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 129900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I find 1 books",
+            "match": {
+              "location": "steps_definitions\\booksByauthor.steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 558199
             }
           }
         ],
